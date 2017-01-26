@@ -1,0 +1,9 @@
+﻿Build started 12/31/2016 2:39:41 PM.
+     1>Project "C:\Sadat\MProjects\gwas\Application1\Application1.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         Application1.vcxproj -> C:\Sadat\MProjects\gwas\Enclave1\Release\Application1.exe
+     1>Done Building Project "C:\Sadat\MProjects\gwas\Application1\Application1.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.03

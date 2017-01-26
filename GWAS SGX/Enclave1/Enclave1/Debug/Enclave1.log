@@ -1,0 +1,53 @@
+﻿Build started 2016-12-21 7:16:23 PM.
+     1>Project "C:\Sadat\MProjects\gwas\Enclave1\Enclave1\Enclave1.vcxproj" on node 2 (Rebuild target(s)).
+     1>CustomBuild:
+         Creating proxy/bridge routines
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Intel\IntelSGXSDK\include" /I"C:\Program Files (x86)\Intel\IntelSGXSDK\include\tlibc" /I"C:\Program Files (x86)\Intel\IntelSGXSDK\include\stlport" /Zi /nologo /W3 /WX- /Od /Oy- /D _WINDLL /Gm- /EHsc /MTd /GS /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt biginteger.cpp bigintegeralgorithms.cpp bigintegerutils.cpp bigunsigned.cpp bigunsignedbase.cpp Enclave1.cpp
+         biginteger.cpp
+         bigintegeralgorithms.cpp
+         bigintegerutils.cpp
+         bigunsigned.cpp
+         bigunsignedbase.cpp
+         Enclave1.cpp
+     1>Enclave1.cpp(115): warning C4018: '>' : signed/unsigned mismatch
+     1>Enclave1.cpp(212): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>Enclave1.cpp(213): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>Enclave1.cpp(831): warning C4244: 'initializing' : conversion from 'unsigned __int64' to 'int', possible loss of data
+     1>Enclave1.cpp(832): warning C4244: 'initializing' : conversion from 'unsigned __int64' to 'int', possible loss of data
+     1>Enclave1.cpp(836): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>Enclave1.cpp(993): warning C4244: 'argument' : conversion from 'double' to 'const int', possible loss of data
+         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Intel\IntelSGXSDK\include" /I"C:\Program Files (x86)\Intel\IntelSGXSDK\include\tlibc" /I"C:\Program Files (x86)\Intel\IntelSGXSDK\include\stlport" /Zi /nologo /W3 /WX- /Od /Oy- /D _WINDLL /Gm- /EHsc /MTd /GS /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt Enclave1_t.c
+         Enclave1_t.c
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Sadat\MProjects\gwas\Enclave1\Debug\Enclave1.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Program Files (x86)\Intel\IntelSGXSDK\bin\Win32\Debug" sgx_trts.lib sgx_tstdc.lib sgx_tservice.lib sgx_tcrypto.lib sgx_tstdcxx.lib /NODEFAULTLIB /MANIFEST:NO /DEBUG /PDB:"C:\Sadat\MProjects\gwas\Enclave1\Debug\Enclave1.pdb" /TLBID:1 /NOENTRY /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Sadat\MProjects\gwas\Enclave1\Debug\Enclave1.lib" /MACHINE:X86 /SAFESEH /DLL Debug\biginteger.obj
+         Debug\bigintegeralgorithms.obj
+         Debug\bigintegerutils.obj
+         Debug\bigunsigned.obj
+         Debug\bigunsignedbase.obj
+         Debug\Enclave1.obj
+         Debug\Enclave1_t.obj
+            Creating library C:\Sadat\MProjects\gwas\Enclave1\Debug\Enclave1.lib and object C:\Sadat\MProjects\gwas\Enclave1\Debug\Enclave1.exp
+         Enclave1.vcxproj -> C:\Sadat\MProjects\gwas\Enclave1\Debug\Enclave1.dll
+       PostBuildEvent:
+         "C:\Program Files (x86)\Intel\IntelSGXSDK\bin\win32\release\sgx_sign.exe" sign -key "C:\Sadat\MProjects\gwas\Enclave1\Enclave1\Enclave1_private.pem" -enclave "C:\Sadat\MProjects\gwas\Enclave1\Debug\Enclave1.dll" -out "C:\Sadat\MProjects\gwas\Enclave1\Debug\Enclave1.signed.dll" -config "C:\Sadat\MProjects\gwas\Enclave1\Enclave1\Enclave1.config.xml"
+         :VCEnd
+         The required memory is 0x8d1000.
+         Succeed.
+         <EnclaveConfiguration>
+             <ProdID>0</ProdID>
+             <ISVSVN>0</ISVSVN>
+             <StackMaxSize>0x80000</StackMaxSize>
+             <HeapMaxSize>0x800000</HeapMaxSize>
+             <TCSNum>1</TCSNum>
+             <TCSPolicy>1</TCSPolicy>
+             <DisableDebug>0</DisableDebug>
+             <MiscSelect>0</MiscSelect>
+             <MiscMask>0xFFFFFFFF</MiscMask>
+         </EnclaveConfiguration>
+     1>Done Building Project "C:\Sadat\MProjects\gwas\Enclave1\Enclave1\Enclave1.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.67
