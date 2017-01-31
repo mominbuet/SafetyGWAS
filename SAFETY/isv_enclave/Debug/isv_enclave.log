@@ -1,0 +1,25 @@
+﻿Build started 1/31/2017 2:46:48 PM.
+     1>Project "C:\Sadat\SAFETY\isv_enclave\isv_enclave.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         isv_enclave.vcxproj -> C:\Sadat\SAFETY\Debug\isv_enclave.dll
+       PostBuildEvent:
+         "C:\Program Files (x86)\Intel\IntelSGXSDK\bin\win32\release\sgx_sign.exe" sign -key "isv_enclave_private.pem" -enclave "C:\Sadat\SAFETY\Debug\isv_enclave.dll" -out "C:\Sadat\SAFETY\Debug\isv_enclave.signed.dll" -config "isv_enclave.config.xml"
+         :VCEnd
+         The required memory is 0x246000.
+         Succeed.
+         <EnclaveConfiguration>
+             <ProdID>0</ProdID>
+             <ISVSVN>0</ISVSVN>
+             <StackMaxSize>0x40000</StackMaxSize>
+             <HeapMaxSize>0x100000</HeapMaxSize>
+             <TCSNum>1</TCSNum>
+             <TCSPolicy>1</TCSPolicy>
+             <DisableDebug>0</DisableDebug>
+             <MiscSelect>0</MiscSelect>
+             <MiscMask>0xFFFFFFFF</MiscMask>
+         </EnclaveConfiguration>
+     1>Done Building Project "C:\Sadat\SAFETY\isv_enclave\isv_enclave.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.27
